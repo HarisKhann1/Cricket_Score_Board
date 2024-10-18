@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(cricket\ statuium.jpg);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.wrapper{
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 48px;
+    overflow: hidden;
+}
+
+input{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+label{
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+
+select{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-left: 5px;
+    font-weight: bold;
+    background-color: orange;
+}
+
+.toss{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+
+
+.score-board{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(31, 48, 160, 1);
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(220, 214, 214);
+}
+
+#buttons{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#announcement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap : 0.5rem;
+    color: rgb(13, 90, 153);
+}
+
+#playAgain{
+    background-color: blue;
+}
+
+.overflow{
+    width: 50%;
+    margin-inline: auto;
+    color: orange;
+}
+@media screen and (max-width: 992px){
+    .wrapper{
+        height: 170vh;
+        justify-content: flex-start;
+        padding-top: 3rem;
+    }
+
+    .input-fields{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-inline: 2rem;
+    }
+
+    #announcement{
+        padding-inline: 2rem;
+    }
+
+    .toss{
+        padding-inline: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    select{
+        width: 100%;
+    }
+    
+    #toss{
+        width: 100%;
+    }
+
+    #buttons{
+        padding-inline: 2rem;
+        display: flex;
+        flex-direction: row;
+        gap: 0.4rem;
+        flex-wrap: wrap;
+    }
+
+    .score-board{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: small;
+    }
+
+    .overflow{
+        padding-inline: 1rem;
+        font-size: small;
+    }
+}
