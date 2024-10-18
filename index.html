@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cricket Score Board</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <button id="playAgain">Play Again</button>
+        <!-- Announce toss and match winner -->
+        <div id="announcement"></div>
+        <!-- Toss -->
+        <div id="tossWrapper">
+            <!-- Select team A and Team B -->
+             <div class="input-fields">
+                <label for="Team-1">Team 1</label>
+                <input type="text" id="t-1">
+                <label for="Team-1">Team 2</label>
+                <input type="text" id="t-2">
+                <label for="overs">Overs</label>
+                <input type="number" id="overs">
+             </div>
+            <!-- toss -->
+            <div class="toss">
+                <h2>Toss : </h2>
+                <select name="team" id="selectTeam">
+                    <option value="team1">Team 1</option>
+                    <option value="team2">Team 2</option>
+                </select>
+                <select name="toss" id="selectCoinSide">
+                    <option value="Head">Head</option>
+                    <option value="Tail">Tail</option>
+                </select>
+                <button id="toss">Toss</button>
+            </div>
+        </div>
+        
+        <!-- Score Card -->
+        <div id="scores">
+            <!-- button for runs -->
+            <div id="buttons">                
+                <button id="one">1</button>
+                <button id="two">2</button>
+                <button id="three">3</button>
+                <button id="four">4</button>
+                <button id="six">6</button>
+                <button id="dot">dot</button>
+                <button id="wide">wide</button>
+                <button id="out">out</button>
+                <button id="noBall">no Ball</button>
+            </div>
+            <!-- Score board -->
+            <div class="score-board">
+                <div class="stats">
+                    <h1>Team: <span id="teamName1"></span></h1>
+                    <h2>Score: <span id="score1"></span></h2>
+                    <h2>Wickets: <span id="wickets1"></span></h2>
+                    <h2>Overs: <span id="overs1"></span></h2>
+                </div> 
+                <div class="stats">
+                    <h1>Team: <span id="teamName2"></span></h1>
+                    <h2>Score: <span id="score2"></span></h2>
+                    <h2>Wickets: <span id="wickets2"></span></h2>
+                    <h2>Overs: <span id="overs2"></span></h2>
+                </div>
+            </div>
+            <h3 class="overflow">Curr.Over Score: <span id="ballByBall"></span></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
